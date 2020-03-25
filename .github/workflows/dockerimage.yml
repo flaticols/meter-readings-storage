@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run: |
         docker login docker.pkg.github.com -u flaticols -p ${{ secrets.GITHUB_ACTIONS_TOKEN }}
-        docker build . --file Dockerfile --tag docker.pkg.github.com/flaticols/meter-readings-storage/meter-readings-storage:0.1
-        docker push docker.pkg.github.com/flaticols/meter-readings-storage/meter-readings-storage:0.1
-      
+        docker build . --file Dockerfile --tag docker.pkg.github.com/flaticols/meter-readings-storage/meter-readings-storage:0.1.0
+        docker push docker.pkg.github.com/flaticols/meter-readings-storage/meter-readings-storage:0.1.0
+
