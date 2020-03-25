@@ -15,5 +15,5 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 # final stage
 FROM scratch
 COPY --from=build /app/meterreadingserver /app/
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["/app/meterreadingserver"]
